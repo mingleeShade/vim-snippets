@@ -106,15 +106,22 @@ public:
 #endif /* $2 */
 endsnippet
 
-
+snippet fh "Description of file head." b
+/**
+ * @file        `!v vim_snippets#FileFullName('$1', 'FileName')`
+ * @date        `!v strftime("%b %d, %Y")`
+ * @author      lihaiming
+ * @matainer    lihaiming 
+ * @brief       ${1:brief}
+*/
+endsnippet
+	
 snippet fnc "Basic c++ doxygen function template" b
 /**
-* @brief: ${4:brief}
-*
-* @param: `!p write_docstring_args(t[3],snip)`
-*
-* @return: `!p snip.rv = t[1]`
-*/
+ * @brief: 		${4:brief}
+ * @param: 		`!p write_docstring_args(t[3],snip)`
+ * @return: 	`!p snip.rv = t[1]`
+ */
 ${1:ReturnType} ${2:FunctionName}(${3:param})
 {
 	${0:FunctionBody}

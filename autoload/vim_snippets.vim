@@ -19,6 +19,20 @@ fun! vim_snippets#Filename(...)
   endif
 endf
 
+fun! vim_snippets#FileFullName(...)
+  let template = get(a:000, 0, "$1")
+  let arg2 = get(a:000, 1, "")
+
+  let basename = expand('%:t')
+
+  if basename == ''
+    return arg2
+  else
+    return substitute(template, '$1', basename, 'g')
+  endif
+endf
+
+
 " original code:
 " fun! Filename(...)
 "     let filename = expand('%:t:r')
