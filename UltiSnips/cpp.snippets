@@ -128,6 +128,72 @@ ${1:ReturnType} ${2:FunctionName}(${3:param})
 }
 endsnippet
 
+
+# function declaration
+snippet fund0
+/**
+ * @brief		$3 ${4:Brief function description here}
+ * @return		$1 ${2:Return parameter description}
+ */
+${1:void} ${3:FuncName}();
+endsnippet
+
+# function declaration
+snippet vfund0
+/**
+ * @brief		$3 ${4:Brief function description here}
+ * @return		$1 ${2:Return parameter description}
+ */
+virtual ${1:void} ${3:FuncName}();
+endsnippet
+
+# function declaration
+snippet vofund0
+/**
+ * @brief		$3 ${4:Brief function description here}
+ * @return		$1 ${2:Return parameter description}
+ */
+virtual ${1:void} ${3:FuncName}() override;
+endsnippet
+
+# function declaration
+snippet fund1
+/**
+ * @brief		${4:Brief function description here}
+ * @param		$6: ${7: Parameter description}
+ * @return		$1: ${2:Return parameter description}
+ */
+${1:void} ${3:FuncName}(${5:Type1} ${6:Parame1});
+endsnippet
+
+# function declaration
+snippet vfund1
+/**
+ * @brief		${4:Brief function description here}
+ * @param		$6: ${7: Parameter description}
+ * @return		$1: ${2:Return parameter description}
+ */
+virtual ${1:void} ${3:FuncName}(${5:Type1} ${6:Parame1});
+endsnippet
+
+# function declaration
+snippet vofund1
+/**
+ * @brief		${4:Brief function description here}
+ * @param		$6: ${7: Parameter description}
+ * @return		$1: ${2:Return parameter description}
+ */
+virtual ${1:void} ${3:FuncName}(${5:Type1} ${6:Parame1}) override;
+endsnippet
+
+snippet funcd "C++ function description" b
+/**
+ * @brief: 		${4:brief}
+ * @param: 		`!p write_docstring_args(t[3],snip)`
+ * @return: 	`!p snip.rv = t[1]`
+ */
+endsnippet
+
 snippet boost_test "Boost test module" b
 #define BOOST_TEST_MODULE ${1:TestModuleName}
 #include <boost/test/included/unit_test.hpp>
