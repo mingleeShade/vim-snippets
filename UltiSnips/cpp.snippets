@@ -133,7 +133,7 @@ endsnippet
 snippet fund0
 /**
  * @brief		${3:Brief function description here}
- * @return		${4:Return parameter description}
+ * @return		${4:无返回}
  */
 ${2:void} ${1:FuncName}();
 endsnippet
@@ -142,7 +142,7 @@ endsnippet
 snippet vfund0
 /**
  * @brief		${3:Brief function description here}
- * @return		${4:Return parameter description}
+ * @return		${4:无返回}
  */
 virtual ${2:void} ${1:FuncName}();
 endsnippet
@@ -151,7 +151,7 @@ endsnippet
 snippet vofund0
 /**
  * @brief		${3:Brief function description here}
- * @return		${4:Return parameter description}
+ * @return		${4:无返回}
  */
 virtual ${2:void} ${1:FuncName}() override;
 endsnippet
@@ -161,7 +161,7 @@ snippet fund1
 /**
  * @brief		${5:Brief function description here}
  * @param		$3: ${6: Parameter description}
- * @return		${7:Return parameter description}
+ * @return		${7:无返回}
  */
 ${4:void} ${1:FuncName}(${2:Type1} ${3:Parame1});
 endsnippet
@@ -171,7 +171,7 @@ snippet vfund1
 /**
  * @brief		${5:Brief function description here}
  * @param		$3: ${6: Parameter description}
- * @return		${2:Return parameter description}
+ * @return		${7:无返回}
  */
 virtual ${4:void} ${1:FuncName}(${2:Type1} ${3:Parame1});
 endsnippet
@@ -181,9 +181,78 @@ snippet vofund1
 /**
  * @brief		${5:Brief function description here}
  * @param		$3: ${6: Parameter description}
- * @return		${2:Return parameter description}
+ * @return		${7:无返回}
  */
 virtual ${4:void} ${1:FuncName}(${2:Type1} ${3:Parame1}) override;
+endsnippet
+
+# function declaration
+snippet fund2
+/**
+ * @brief		${7:Brief function description here}
+ * @param		$3: ${8: Parameter description}
+ * @param		$5: ${9: Parameter description}
+ * @return		${10:无返回}
+ */
+${6:void} ${1:FuncName}(${2:Type1} ${3:Parame1}, ${4:Type1} ${5:Parame1});
+endsnippet
+
+# function declaration
+snippet vfund2
+/**
+ * @brief		${7:Brief function description here}
+ * @param		$3: ${8: Parameter description}
+ * @param		$5: ${9: Parameter description}
+ * @return		${10:无返回}
+ */
+virtual ${6:void} ${1:FuncName}(${2:Type1} ${3:Parame1}, ${4:Type1} ${5:Parame1});
+endsnippet
+
+# function declaration
+snippet vofund2
+/**
+ * @brief		${7:Brief function description here}
+ * @param		$3: ${8: Parameter description}
+ * @param		$5: ${9: Parameter description}
+ * @return		${10:无返回}
+ */
+virtual ${6:void} ${1:FuncName}(${2:Type1} ${3:Parame1}, ${4:Type1} ${5:Parame1}) override;
+endsnippet
+
+# function declaration
+snippet fund3
+/**
+ * @brief		${9:Brief function description here}
+ * @param		$3: ${10: Parameter description}
+ * @param		$5: ${11: Parameter description}
+ * @param		$7: ${12: Parameter description}
+ * @return		${13:无返回}
+ */
+${8:void} ${1:FuncName}(${2:Type1} ${3:Parame1}, ${4:Type1} ${5:Parame1}, ${6:Type1} ${7:Parame1});
+endsnippet
+
+# function declaration
+snippet vfund3
+/**
+ * @brief		${9:Brief function description here}
+ * @param		$3: ${10: Parameter description}
+ * @param		$5: ${11: Parameter description}
+ * @param		$7: ${12: Parameter description}
+ * @return		${13:无返回}
+ */
+virtual ${8:void} ${1:FuncName}(${2:Type1} ${3:Parame1}, ${4:Type1} ${5:Parame1}, ${6:Type1} ${7:Parame1});
+endsnippet
+
+# function declaration
+snippet vofund3
+/**
+ * @brief		${9:Brief function description here}
+ * @param		$3: ${10: Parameter description}
+ * @param		$5: ${11: Parameter description}
+ * @param		$7: ${12: Parameter description}
+ * @return		${13:无返回}
+ */
+virtual ${8:void} ${1:FuncName}(${2:Type1} ${3:Parame1}, ${4:Type1} ${5:Parame1}, ${6:Type1} ${7:Parame1}) override;
 endsnippet
 
 snippet funcd "C++ function description" b
