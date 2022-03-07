@@ -4,28 +4,28 @@ global !p
 from vimsnippets import complete
 
 FIELD_TYPES = [
-	'double',
-	'float',
-	'int32',
-	'int64',
-	'uint32',
-	'uint64',
-	'sint32',
-	'sint64',
-	'fixed32',
-	'fixed64',
-	'sfixed32',
-	'sfixed64',
-	'bool',
-	'string',
-	'bytes']
+    'double',
+    'float',
+    'int32',
+    'int64',
+    'uint32',
+    'uint64',
+    'sint32',
+    'sint64',
+    'fixed32',
+    'fixed64',
+    'sfixed32',
+    'sfixed64',
+    'bool',
+    'string',
+    'bytes']
 endglobal
 
 snippet mess "Proto message" b
 // ${2:TODO(`whoami`): Describe this message.}
 message ${1:Name}
 {
-	${3:type}	${4:value_name}
+    ${3:type}   ${4:value_name}
 }
 endsnippet
 
