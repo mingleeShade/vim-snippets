@@ -179,12 +179,12 @@ public:
 		m_sub_id = g_count++; 
 		cout << "Derive create. id: " << m_sub_id << endl;
 	}
-	~Base() {
+	~Derive() {
 		cout << "Derive destroy. id: " << m_sub_id << endl;
 	}
 protected:
 	int m_sub_id = 0;
-}
+};
 endsnippet
 
 snippet fhp "Description of file head." b
