@@ -170,7 +170,7 @@ public:
 		cout << "Base destroy. id: " << m_id << endl;
 	}
 protected:
-	m_id = 0;
+	int m_id = 0;
 };
 
 class Derive : public Base {
@@ -183,7 +183,7 @@ public:
 		cout << "Derive destroy. id: " << m_sub_id << endl;
 	}
 protected:
-	m_sub_id = 0;
+	int m_sub_id = 0;
 }
 endsnippet
 
