@@ -117,8 +117,8 @@ snippet fh "Description of file head." b
 /**
  * @file        `!v vim_snippets#FileFullName('$1', 'FileName')`
  * @date        `!v strftime("%b %d, %Y")`
- * @author      lihaiming
- * @matainer    lihaiming
+ * @author      `!v g:snips_author`
+ * @maintainer	`!v g:snips_author`
  * @brief       ${1:brief}
 */
 endsnippet
@@ -127,8 +127,8 @@ snippet fhh "Description of file head." b
 /**
  * @file        `!v vim_snippets#FileFullName('$1', 'FileName')`
  * @date        `!v strftime("%b %d, %Y")`
- * @author      lihaiming
- * @matainer    lihaiming
+ * @author      `!v g:snips_author`
+ * @maintainer  `!v g:snips_author`
  * @brief       ${1:brief}
 */
 #pragma once
@@ -140,6 +140,51 @@ snippet fhh "Description of file head." b
 
 // pb, std, thirdparty and others
 
+endsnippet
+
+snippet fht "File header of test" b
+#include <iostream>
+#include <vector>
+#include <list>
+#include <map>
+#include <unordered_map>
+#include <string>
+using namespace std;
+
+int main()
+{
+	return 0;
+}
+endsnippet
+
+snippet tbd "Test base derive" b
+
+int g_count = 0;
+class Base {
+public:
+	Base() {
+		m_id = g_count++;
+		cout << "Base create. id: " << m_id << endl;
+	}
+	~Base() {
+		cout << "Base destroy. id: " << m_id << endl;
+	}
+protected:
+	m_id = 0;
+};
+
+class Derive : public Base {
+public:
+	Derive() {
+		m_sub_id = g_count++; 
+		cout << "Derive create. id: " << m_sub_id << endl;
+	}
+	~Base() {
+		cout << "Derive destroy. id: " << m_sub_id << endl;
+	}
+protected:
+	m_sub_id = 0;
+}
 endsnippet
 
 snippet fhp "Description of file head." b
