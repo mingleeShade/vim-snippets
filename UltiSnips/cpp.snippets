@@ -142,6 +142,25 @@ snippet fhh "Description of file head." b
 
 endsnippet
 
+snippet fhp "Description of file head." b
+/**
+ * @file        `!v vim_snippets#FileFullName('$1', 'FileName')`
+ * @date        `!v strftime("%b %d, %Y")`
+ * @author      `!v g:snips_author`
+ * @maintainer  `!v g:snips_author`
+ * @brief       ${1:brief}
+*/
+// self
+#include "`!v vim_snippets#Filename('$1', 'FileName')`.h"
+
+// common modules
+
+// wsengine
+
+// pb, std, thirdparty and others
+
+endsnippet
+
 snippet fht "File header of test" b
 #include <iostream>
 #include <vector>
@@ -185,25 +204,6 @@ public:
 protected:
 	int m_sub_id = 0;
 };
-endsnippet
-
-snippet fhp "Description of file head." b
-/**
- * @file        `!v vim_snippets#FileFullName('$1', 'FileName')`
- * @date        `!v strftime("%b %d, %Y")`
- * @author      lihaiming
- * @matainer    lihaiming
- * @brief       ${1:brief}
-*/
-// self
-#include "`!v vim_snippets#Filename('$1', 'FileName')`.h"
-
-// common modules
-
-// wsengine
-
-// pb, std, thirdparty and others
-
 endsnippet
 
 
