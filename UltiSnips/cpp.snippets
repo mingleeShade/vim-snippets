@@ -132,13 +132,6 @@ snippet fhh "Description of file head." b
  * @brief       ${1:brief}
 */
 #pragma once
-// self
-
-// common modules
-
-// wsengine
-
-// pb, std, thirdparty and others
 
 endsnippet
 
@@ -150,14 +143,8 @@ snippet fhp "Description of file head." b
  * @maintainer  `!v g:snips_author`
  * @brief       ${1:brief}
 */
-// self
+
 #include "`!v vim_snippets#Filename('$1', 'FileName')`.h"
-
-// common modules
-
-// wsengine
-
-// pb, std, thirdparty and others
 
 endsnippet
 
@@ -172,6 +159,7 @@ using namespace std;
 
 int main()
 {
+    ${1:code}
     return 0;
 }
 endsnippet
