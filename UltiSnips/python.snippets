@@ -749,7 +749,9 @@ endsnippet
 
 snippet walkfile "traversal files" b
 for path, dir_list, file_list in os.walk("${1:path}"):
-	${2:code}
+	for file_name in file_list:
+		if os.path.splitext(fine_name)[-1] == "csv":
+			${2:pass}
 endsnippet
 
 # vim:ft=snippets:
