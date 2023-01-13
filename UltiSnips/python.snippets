@@ -747,4 +747,9 @@ snippet pmdoc "pocoo style module doc string" b
 $0
 endsnippet
 
+snippet walkfile "traversal files" b
+for path, dir_list, file_list in os.walk("${1:path}"):
+	${2:code}
+endsnippet
+
 # vim:ft=snippets:
